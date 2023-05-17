@@ -21,6 +21,12 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans&family=Open+Sans&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,42 +35,48 @@
 
   <header>
     <div class="content-wrapper">
-      <h1>Asia Yap-Dubois</h1>
-      <nav>
-        <ul>
-          <li>
-            <a>about</a>
-          </li>
-          <li>
-            <a>skills</a>
-          </li>
-          <li>
-            <a>projects</a>
-          </li>
-          <li>
-            <a>connect</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-left">
+        <h1>Asia Yap-Dubois</h1>
+      </div>
+      <div class="header-right">
+        <nav>
+          <ul>
+            <li>
+              <a href="#about-section">about</a>
+            </li>
+            <li>
+              <a href="#skills">skills</a>
+            </li>
+            <li>
+              <a href="#projects">projects</a>
+            </li>
+            <li>
+              <a href="#connect">connect</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <!------ MAIN CONTENT ---------------------------------->
 
   <main>
+
     <!-------- about section ---------->
+
     <section class="about">
       <div class="content-wrapper">
         <div id="avatar" class="container">
-          <img>
+          <img class="my-avatar" src="./img/asia-photo.jpg" alt="avatar of Asia">
         </div>
-        <div class="about-section">
+        <div id="about-section">
           <h2>Asia</h2>
           <p class="about-me">Hi! I'm a front-end developer based in Boston.</p>
           <p class="background-info">As a creative person, I have always been drawn to the world of art and design.
             However, as technology has become increasingly prevalent in our daily lives, I have found that my passion
             for creativity has extended beyond traditional mediums like oil painting to include digital media as well.
-            This is where my interest in front end development began. When I'm offline, you can find me oil painting,
+            This is where my interest in front end development began. <br><br>When I'm offline, you can find me oil painting,
             reading a book, walking in the city, or cooking!</p>
         </div>
       </div>
@@ -85,7 +97,7 @@
 
     <section class="projects">
       <div class="content-wrapper">
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         <div class="projects-wrapper">
           <div class="project-item">
             <h3>Note Tracker App</h3>
@@ -124,11 +136,11 @@
 
     <!-------- connect section ---------->
 
-    <section class="connect">
+    <section id="connect">
       <div class="content-wrapper">
         <h2>Let's Connect</h2>
         <address>
-          <a href="mailto:asiayapd@gmail.com">Asiayapd@gmail.com</a>
+          <a href="mailto:asiayapd@gmail.com"><i class="fa-thin fa-envelope"></i>Asiayapd@gmail.com</a>
         </address>
         <div class="socials">
           <a href="https://www.linkedin.com/in/asiayapd/" target="_blank">linkedin icon</a>
@@ -149,13 +161,19 @@
       <div class="footer-right">
         <nav>
           <ul>
-            <li class="about-link">about</li>
+            <li class="about-link">
+              <a href="#about-section">about</a>
+            </li>
           </ul>
           <ul>
-            <li class="skills-link">about</li>
+            <li class="skills-link">
+              <a href="#skills">skills</a>
+            </li>
           </ul>
           <ul>
-            <li class="projects-link">about</li>
+            <li class="projects-link">
+              <a href="projects">projects</a>
+            </li>
           </ul>
         </nav>
       </div>
