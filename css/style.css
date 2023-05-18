@@ -86,225 +86,277 @@ textarea {
 
 /* ----------------------- GENERAL STYLES ----------------------- */
 
-  html {
+html {
   font-size: 16px;
   background-color: #EEE4F0;
-  }
+}
 
-  body {
-    font-family: "nunito sans", sans-serif;
-    color: #351D77;
-    font-size: 1em;
-    text-align: left;
-  }
+body {
+  font-family: "nunito sans", sans-serif;
+  color: #351D77;
+  font-size: 1em;
+  text-align: left;
+}
 
-  ul,
-  ol {
-    list-style-type: none;
-    margin:0;
-    padding:0;
-  }
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  a {
-    color: #351D77;
-    text-decoration: none;
-  }
+a {
+  color: #351D77;
+  text-decoration: none;
+}
 
-  h2 {
-    font-family: "Alata", sans-serif;
-    font-size: 3.2em;
-    font-weight: 500;
-    margin:0;
-  }
+h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 3.2em;
+  font-weight: 500;
+  margin: 0;
+}
 
-  h3 {
-    font-family:"Alata", sans-serif;
-    font-size: 1.125em;
-    font-weight:500;
-    margin:0;
-  }
+h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 0;
+}
 
-  img {
-    width:100%;
-  }
+img {
+  width: 100%;
+}
 
-  p {
-    line-height: 1.285em;
-    font-size: .95em;
-  }
+p {
+  line-height: 1.285em;
+  font-size: .95em;
+}
 
-  address {
-    font-style: normal;
-  }
+address {
+  font-style: normal;
+}
 
-  .content-wrapper {
-    width:90%;
-    margin: 25px 0;
-  };
+.content-wrapper {
+  width: 90%;
+  margin: 25px 0;
+}
+
+;
 
 /* ----------------------- Base Header - Footer STYLES ----------------------- */
 
-  header,
-  footer {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  header {
-    padding: 16px 0;
-  }
+header {
+  padding: 16px 0;
+}
 
-  header .content-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width:80%;
-    margin: 25px auto 0 auto;
-  }
+header .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 25px auto 0 auto;
+}
 
-  .header-left h1 {
-    font-family: "Alata", sans-serif;
-    font-weight: 100;
-    font-size: 1.25em;
-    text-transform: uppercase;
-  }
+.header-left h1 {
+  font-family: "Alata", sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
 
-  .header-right ul {
-    margin: .5em 0 .5em 0;
-    text-align: center;
-    font-size: 1.25em;
-    text-transform: lowercase;
-  }
+.header-right ul {
+  margin: .5em 0 .5em 0;
+  text-align: center;
+  font-size: 1.25em;
+  text-transform: lowercase;
+}
 
-  .header-right li {
-    display: inline;
-  }
+.header-right li {
+  display: inline;
+}
 
-  .header-right a {
-    display: inline-block;
-    padding: .5em .25em;
-  }
+.header-right a {
+  display: inline-block;
+  padding: .5em .25em;
+}
 
-  footer {
-    padding: 16px 0;
-  }
+footer {
+  padding: 16px 0;
+}
 
-  footer .content-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width:80%;
-    margin: 25px auto 0 auto;
-  }
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 25px auto 0 auto;
+}
 
-  .footer-left p {
-    font-family: "Alata", sans-serif;
-    font-weight: 100;
-    font-size: 1.25em;
-    text-transform: uppercase;
-  }
+.footer-left p {
+  font-family: "Alata", sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
 
-  .footer-right ul {
-    margin: 1em 0 .5em 0;
-    text-align: center;
-    font-size: 1.25em;
-    text-transform: lowercase;
-    display: inline;
-  }
+.footer-right ul {
+  margin: 1em 0 .5em 0;
+  text-align: center;
+  font-size: 1.25em;
+  text-transform: lowercase;
+  display: inline;
+}
 
-  .footer-right li {
-    display: inline;
-  }
-  
-  .footer-right a {
-    padding: .5em .7em;
-  }
+.footer-right li {
+  display: inline;
+}
+
+.footer-right a {
+  padding: .5em .7em;
+}
 
 /* ----------------------- Mobile STYLES ----------------------- */
 
-  /* ----- About ----- */
+/* ----- About ----- */
 
-  .about .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin:25px auto;
-  }  
+.about .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 25px auto 10px auto;
+}
 
-  #avatar,
-  .container {
-    width: 63%;
-    margin:0;
-    max-width:500px;
-    display:flex;
-    align-items: center;
-    position:relative;
-    height: 51vmin;
-    justify-content: space-between;
-  }
+#avatar,
+.container {
+  width: 63%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 51vmin;
+  justify-content: space-between;
+}
 
-  img .container {
-    position: absolute;
-    max-width: 450px;
-  }
+img .container {
+  position: absolute;
+  max-width: 400px;
+}
 
-  .my-avatar {
-    border-radius: 30%; /* 50 makes it a circle*/
-  }
+.my-avatar {
+  border-radius: 35%;
+  /* 50 makes it a circle*/
+}
 
-  #about-section {
-    width:90%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
+#about-section {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 15px 0px;
+}
 
-  .about h2 {
-    margin: 0 auto 10px auto;
-    text-align: center;
+.about h2 {
+  margin: 0 auto 10px auto;
+}
 
-  }
+.about-me {
+  margin: 10px auto;
+  font-size: 1.625em;
+  line-height: 28px;
+  text-align: center;
+  width: 95%;
+}
 
-  .about-me {
-    margin: 10 auto 10 auto;
+.background-info {
+  font-size: 1.15em;
+  line-height: 23px;
+  width: 95%;
+  margin: 10px;
+  text-align: center;
+}
 
-    font-size: 1.625em;
-    line-height: 28px;
-    text-align: center;
-  }
+/* ----- Skills ----- */
 
-  .background-info {
-    font-size: 1.15em;
-    line-height:23px;
-    width:80%;
-    margin: 10px auto;
-    text-align: center;
+.skills .content-wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
 
-  }
+}
 
+.skills h2 {
+  text-align: center;
+}
 
-  /* ----- Skills ----- */
-  /* ----- Project ----- */
-  /* ----- Connect ----- */
+.skills-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+}
+
+.skill-type {
+  width: 90%;
+  /* needs to be closer to 40% for tablet and desktop*/
+  text-align: center;
+  padding: 15px 0;
+  background-color: #EC91C4;
+  margin: 20px 0;
+  font-size: 1.25em;
+}
+
+/* ----- Project ----- */
+.projects .content-wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.projects-wrapper {
+  display:flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+/* ----- Connect ----- */
 
 /* ----------------------- Tablet STYLES ----------------------- */
 
-  /* ----- About ----- */
-  /* ----- Skills ----- */
-  /* ----- Project ----- */
-  /* ----- Connect ----- */
+/* ----- About ----- */
+/* ----- Skills ----- */
+/* ----- Project ----- */
+/* ----- Connect ----- */
 
 /* ----------------------- Desktop STYLES ----------------------- */
 
-  /* ----- About ----- */
-  /* ----- Skills ----- */
-  /* ----- Project ----- */
-  /* ----- Connect ----- */
+/* ----- About ----- */
+/* ----- Skills ----- */
+/* ----- Project ----- */
+/* ----- Connect ----- */
 
 /* ==========================================================================
    Helper classes
@@ -394,9 +446,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -407,6 +459,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -466,4 +519,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
