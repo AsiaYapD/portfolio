@@ -195,11 +195,12 @@ footer {
 
 footer .content-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
   margin: 25px auto 0 auto;
+
 }
 
 .footer-left p {
@@ -207,6 +208,7 @@ footer .content-wrapper {
   font-weight: 100;
   font-size: 1em;
   text-transform: uppercase;
+  padding: 0px 2px;
 }
 
 .footer-left {
@@ -330,6 +332,7 @@ img .container {
 }
 
 /* ----- Project ----- */
+
 .projects .content-wrapper {
   width: 90%;
   display: flex;
@@ -354,6 +357,7 @@ img .container {
 .project-item {
   width:70%;
   max-width: 400px;
+  min-width: 100px;
   height: 500px;
   margin:10px;
   display:flex;
@@ -368,14 +372,16 @@ img .container {
 .project-item h3 {
   text-align: center;
   margin: 0 auto 15px auto;
+  padding: 5px 0px;
 }
 
 .projects img {
   width:100%;
+  /*height: 250px;*/
   margin: 0px auto;
   border-radius: 5%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  object-fit:contain;
+  object-fit:contain ;
 }
 
 .project-language {
@@ -410,17 +416,32 @@ img .container {
 
 /* ----- Connect ----- */
 #connect .content-wrapper {
+  display:flex;
   margin: 70px auto 0px auto;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 #connect h2 {
   text-align: center;
+  margin:0 auto;
 }
 
-#connect address {
-  text-align: center;
+.contact-methods{
+  justify-items: center;
+  text-align: left;
+  margin: 0px auto;
+  padding: 10px;
 }
 
+i {
+  padding: 5px 5px;
+}
+  
+.fa-github-alt {
+  color:#351D77;
+  padding: 8px 8px 0px 10px;
+}
 
 /* ----------------------- Tablet STYLES ----------------------- */
 
