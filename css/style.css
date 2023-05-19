@@ -205,8 +205,14 @@ footer .content-wrapper {
 .footer-left p {
   font-family: "Alata", sans-serif;
   font-weight: 100;
-  font-size: 1.25em;
+  font-size: 1em;
   text-transform: uppercase;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: space-around;
+  justify-items: left;
 }
 
 .footer-right ul {
@@ -230,12 +236,13 @@ footer .content-wrapper {
 /* ----- About ----- */
 
 .about .content-wrapper {
+  width:90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  margin: 25px auto 10px auto;
+  margin: 50px auto 10px auto;
 }
 
 #avatar,
@@ -247,6 +254,7 @@ footer .content-wrapper {
   position: relative;
   height: 51vmin;
   justify-content: space-between;
+  margin: 20px 0px;
 }
 
 img .container {
@@ -295,7 +303,7 @@ img .container {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 70px auto 0px auto;
 
 }
 
@@ -328,7 +336,7 @@ img .container {
   align-items: center;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin: 0 auto;
+  margin: 70px auto 0px auto;
 }
 
 .projects h2 {
@@ -336,13 +344,83 @@ img .container {
 }
 
 .projects-wrapper {
+  margin:10px 0px;
   display:flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
+.project-item {
+  width:70%;
+  max-width: 400px;
+  height: 500px;
+  margin:10px;
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px 20px;
+  border:1px solid #351D77;
+  border-radius: 18px;
+}
+
+.project-item h3 {
+  text-align: center;
+  margin: 0 auto 15px auto;
+}
+
+.projects img {
+  width:100%;
+  margin: 0px auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  object-fit:contain;
+}
+
+.project-language {
+  text-align: center;
+  text-decoration: underline;  
+  margin: 30px 0 5px 0px;
+}
+
+.project-desription {
+  width:100%;
+  text-align: left;
+  line-height: 15px;
+  width:8px;
+  text-align: justify;
+}
+
+.project-link {
+  text-align: center;
+  margin:30px auto 0 auto;
+  padding: 5px 20px;
+  border: .4px solid #351D77;
+  border-radius: 15px;
+}
+
+.project-link:hover {
+  cursor: pointer;
+  background-color: #351D77;
+  color:#fff;
+  border: .4px solid #fff;
+
+}
+
 /* ----- Connect ----- */
+#connect .content-wrapper {
+  margin: 70px auto 0px auto;
+}
+
+#connect h2 {
+  text-align: center;
+}
+
+#connect address {
+  text-align: center;
+}
+
 
 /* ----------------------- Tablet STYLES ----------------------- */
 
