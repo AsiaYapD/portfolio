@@ -237,8 +237,12 @@ footer .content-wrapper {
 
 /* ----- About ----- */
 
+.about {
+  /*background-color: #EEE4F0;*/
+}
+
 .about .content-wrapper {
-  width:90%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -325,9 +329,9 @@ img .container {
   width: 90%;
   /* needs to be closer to 40% for tablet and desktop*/
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: #EC91C4;
-  margin: 20px 0;
+  margin: 12px 0;
   font-size: 1.25em;
 }
 
@@ -347,25 +351,25 @@ img .container {
 }
 
 .projects-wrapper {
-  margin:10px 0px;
-  display:flex;
+  margin: 10px 0px;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
 }
 
 .project-item {
-  width:70%;
+  width: 70%;
   max-width: 400px;
   min-width: 100px;
   height: 500px;
-  margin:10px;
-  display:flex;
+  margin: 10px;
+  display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   background-color: #fff;
   padding: 15px 20px;
-  border:1px solid #351D77;
+  border: 1px solid #351D77;
   border-radius: 18px;
 }
 
@@ -376,31 +380,31 @@ img .container {
 }
 
 .projects img {
-  width:100%;
+  width: 100%;
   /*height: 250px;*/
   margin: 0px auto;
   border-radius: 5%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  object-fit:contain ;
+  object-fit: contain;
 }
 
 .project-language {
   text-align: center;
-  text-decoration: underline;  
+  text-decoration: underline;
   margin: 30px 0 5px 0px;
 }
 
 .project-desription {
-  width:100%;
+  width: 100%;
   text-align: left;
   line-height: 15px;
-  width:8px;
+  width: 8px;
   text-align: justify;
 }
 
 .project-link {
   text-align: center;
-  margin:30px auto 0 auto;
+  margin: 30px auto 0 auto;
   padding: 5px 20px;
   border: .4px solid #351D77;
   border-radius: 15px;
@@ -409,14 +413,13 @@ img .container {
 .project-link:hover {
   cursor: pointer;
   background-color: #351D77;
-  color:#fff;
+  color: #fff;
   border: .4px solid #fff;
-
 }
 
 /* ----- Connect ----- */
 #connect .content-wrapper {
-  display:flex;
+  display: flex;
   margin: 70px auto 0px auto;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -424,10 +427,10 @@ img .container {
 
 #connect h2 {
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.contact-methods{
+.contact-methods {
   justify-items: center;
   text-align: left;
   margin: 0px auto;
@@ -437,25 +440,11 @@ img .container {
 i {
   padding: 5px 5px;
 }
-  
+
 .fa-github-alt {
-  color:#351D77;
+  color: #351D77;
   padding: 8px 8px 0px 10px;
 }
-
-/* ----------------------- Tablet STYLES ----------------------- */
-
-/* ----- About ----- */
-/* ----- Skills ----- */
-/* ----- Project ----- */
-/* ----- Connect ----- */
-
-/* ----------------------- Desktop STYLES ----------------------- */
-
-/* ----- About ----- */
-/* ----- Skills ----- */
-/* ----- Project ----- */
-/* ----- Connect ----- */
 
 /* ==========================================================================
    Helper classes
@@ -538,18 +527,176 @@ i {
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
+
+
+    TABLET AND DESKTOP VERSIONS HERE
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/* ----------------------- Tablet STYLES ----------------------- */
+
+
+@media only screen and (min-width: 768px) {
+
+  /* ----- General styles ----- */
+
+  .content-wrapper {
+    max-width: 80%;
+    margin-top: 100px;
+  }
+
+  /* Header and Footer styles */
+
+  header .content-wrapper,
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ----- About ----- */
+
+  .about .content-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px auto;
+    text-align: left;
+  }
+
+  .about .about-section {
+    width: 60%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #avatar {
+    text-align: left;
+  }
+
+  #avatar img {
+    width: 100%;
+  }
+
+  .about h2 {
+    margin: 5px 0px 30px 0px;
+  }
+
+  .about p {
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  /* ----- Skills ----- */
+
+  .skills .content-wrapper {
+    width: 90%;
+  }
+
+  .skills h2 {
+    margin-bottom: 50px;
+  }
+
+  .skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
+
+  .skill-type {
+    width: 47%;
+  }
+
+  /* ----- Project ----- */
+
+  .projects .content-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+
+  .projects h2 {
+    margin-bottom: 50px;
+  }
+
+  .project-item {
+    width: 40%;
+  }
+
+  /* ----- Connect ----- */
+
+  #connect .content-wrapper {
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  #connect h2 {
+    text-align: center;
+    width:100%;
+    margin-bottom:50px;
+  }
+
+  .contact-methods {
+    padding: 20px 0px;
+  }
+
+  a{
+    padding: 20px 0px;
+  }
 }
 
-@media print,
+
+/* ----------------------- Desktop STYLES ----------------------- */
+
+
+@media only screen and (min-width: 1200px) {
+
+  /* ----- General styles ----- */
+
+  /* Header and Footer styles */
+
+  /* ----- About ----- */
+  /* ----- Skills ----- */
+  /* ----- Project ----- */
+  /* ----- Connect ----- */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (min-width: 35em) {}
+  /* Style adjustments for viewports that meet the condition */
+/*
+  @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+(min-resolution: 120dpi) {}
   /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
    Print styles.
