@@ -427,7 +427,8 @@ img .container {
 
 #connect h2 {
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .contact-methods {
@@ -437,8 +438,17 @@ img .container {
   padding: 10px;
 }
 
+#connect a {
+  font-size: 1em;
+}
+
 i {
+  font-size: 1.5em;
   padding: 5px 5px;
+}
+
+#connect p {
+  font-size: 1em;
 }
 
 .fa-github-alt {
@@ -630,7 +640,7 @@ i {
   /* ----- Connect ----- */
 
   #connect .content-wrapper {
-    width:90%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -638,15 +648,15 @@ i {
 
   #connect h2 {
     text-align: center;
-    width:100%;
-    margin-bottom:50px;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .contact-methods {
     padding: 20px 0px;
   }
 
-  a{
+  a {
     padding: 20px 0px;
   }
 }
@@ -658,32 +668,84 @@ i {
 @media only screen and (min-width: 1200px) {
 
   /* ----- General styles ----- */
+  header {
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 80%;
+  }
+
+  h2 {
+    font-size: 5em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
 
   /* Header and Footer styles */
 
   /* ----- About ----- */
+
+  .about .about-section {
+    width: 40%;
+    margin-bottom: 50px;
+    padding: 15px 15px 15px 0px;
+  }
+
+  #avatar {
+    text-align: right;
+    margin-right: 0px;
+  }
+
+  #avatar img {
+    width: 100%;
+  }
+
   /* ----- Skills ----- */
+
+  .skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
+
+  .skill-type {
+    width: 32.1%;
+  }
+
   /* ----- Project ----- */
+
+  .project-item {
+    width: 25%;
+    padding: 50px 20px;
+  }
+
+  .project-desription {
+    line-height: 20px;
+  }
+
   /* ----- Connect ----- */
 
+  .contact-methods {
+    justify-items: center;
+    text-align: left;
+    margin: 0px auto;
+    padding: 10px;
+  }
+
+  .social-links {
+    font-size: 1.5em;
+  }
+
+  #connect a {
+    font-size: 1.25em;
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
