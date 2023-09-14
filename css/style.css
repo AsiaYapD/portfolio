@@ -242,7 +242,6 @@ footer .content-wrapper {
   display: flex;
   align-items: center;
   position: relative;
-  height: 51vmin;
   justify-content: space-between;
   margin: 20px 0px;
 }
