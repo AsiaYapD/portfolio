@@ -275,6 +275,10 @@ img .container {
   width: 95%;
 }
 
+.reading {
+  text-decoration: underline;
+}
+
 .background-info {
   text-align: left;
   font-size: 1.15em;
@@ -314,6 +318,8 @@ img .container {
   background-color: #EC91C4;
   margin: 12px 0;
   font-size: 1.25em;
+   border-radius: 18px;
+
 }
 
 /* ----- Project ----- */
